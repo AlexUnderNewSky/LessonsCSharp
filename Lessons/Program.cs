@@ -12,6 +12,7 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
+
             
 
         }
@@ -47,7 +48,10 @@ namespace Lessons
 
 
 
-/*String a = "Hello World!";
+/*
+  LESSON 1!!!!!!!!!!!!!!!!!!!
+
+  String a = "Hello World!";
 Console.WriteLine(a + "FUCKING WORLD");
 
 Console.WriteLine("Привет ЁБАННЫЙ МИР!!!");
@@ -57,6 +61,7 @@ Console.WriteLine("Please, enter b: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
 =====================================================================
+LESSON 2!!!!!!!!!!!!!!!!!!!
 
 if (a >= 1 && a <= 10)
 {
@@ -70,7 +75,8 @@ else
 Console.WriteLine("a = " + a + " b = " + b);
 
 =====================================================================
- 
+ LESSON 3!!!!!!!!!!!!!!!!!!!
+
             bool variableFalse = false;
 
             bool variableTrue = true;
@@ -80,7 +86,8 @@ Console.WriteLine("a = " + a + " b = " + b);
             Console.WriteLine(variableTrue);
 
 =====================================================================
- 
+ LESSON 4!!!!!!!!!!!!!!!!!!!
+
  Console.WriteLine("Please, enter b: ");
             int b = Convert.ToInt16(Console.ReadLine());
             int a = 0;
@@ -94,6 +101,19 @@ Console.WriteLine("a = " + a + " b = " + b);
 
             a = 55;
             Console.WriteLine(a);
+
+=====================================================================
+ LESSON 5!!!!!!!!!!!!!!!!!!!
+
+string data;
+
+            data = Console.ReadLine();
+
+            Console.WriteLine("Салам " + data);
+
+=====================================================================
+ LESSON 6!!!!!!!!!!!!!!!!!!!
+
  */
 
 
