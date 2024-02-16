@@ -17,8 +17,23 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-                
-             
+
+            string str = "7";
+
+            int a;
+
+            bool result = int.TryParse(str, out a);
+
+            if (result)
+            {
+                Console.WriteLine("Operation success, a = " + a);
+            }
+            else
+            {
+                Console.WriteLine("Operation failed!");
+            }
+
+            
 
         }
     }
@@ -145,6 +160,21 @@ string str;
 
             Console.WriteLine(a);
 
+=====================================================================
+ LESSON 7!!!!!!!!!!!!!!!!!!!
+
+string str = "1";
+            try
+            {
+                int a = int.Parse(str);
+                Console.WriteLine(a);
+                Console.WriteLine("Success convertation!");
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Fuck you!");
+            }
  */
 
 
