@@ -1,5 +1,10 @@
 ﻿using System;
-/*using System.Collections.Generic;
+
+/*
+!!!!!!!!!!!!!! Change format , to . and . to , !!!!!!!!
+using System.Globalization;
+!!!!!!!!
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;*/
@@ -12,8 +17,8 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-
-            
+                
+             
 
         }
     }
@@ -113,6 +118,32 @@ string data;
 
 =====================================================================
  LESSON 6!!!!!!!!!!!!!!!!!!!
+
+string str;
+
+            int a, b;
+
+            Console.WriteLine("Enter first value: ");
+
+            str = Console.ReadLine(); 
+
+            a = Convert.ToInt16(str);
+
+            Console.WriteLine("Enter second value: ");
+
+            str = Console.ReadLine();
+
+            b = Convert.ToInt16(str);
+
+            int result = a + b;
+
+            Console.WriteLine("Sum of numbers = " + result);
+///////////
+            string str = "1.9";
+
+            double a = Convert.ToDouble(str);
+
+            Console.WriteLine(a);
 
  */
 
