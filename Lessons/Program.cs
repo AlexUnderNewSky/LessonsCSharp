@@ -17,9 +17,8 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            //new Homework().HomeworkCsharp();
+            new Homework().HomeworkCsharp();
 
-            
 
 
 
@@ -228,6 +227,21 @@ int a = 5;
             int b= 4;
 
             Console.WriteLine(a == b);
+
+=====================================================================
+ LESSON 12!!!!!!!!!!!!!!!!!!!
+
+            Console.WriteLine("Please enter first value: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+
+            if (a >= 10)
+            {   
+                Console.WriteLine("DADA");
+            }
+            else
+            {
+                Console.WriteLine("NENE");
+            }
 
 =====================================================================
  LESSON 12!!!!!!!!!!!!!!!!!!!

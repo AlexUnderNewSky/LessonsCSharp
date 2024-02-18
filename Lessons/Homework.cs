@@ -14,9 +14,6 @@ namespace Lessons
 
 
 
-
-
-
         }
     }
 }
@@ -74,5 +71,17 @@ Homework 1: 3 task:
 
            Console.WriteLine(resEuro);
  
+Homework 2: 1 task:
+           Console.WriteLine("Please enter first value: ");
+           int a = Convert.ToInt16(Console.ReadLine());
+
+           if(a % 2 == 0)
+           {
+               Console.WriteLine("Zaebis'");
+           }
+           else
+           {
+               Console.WriteLine("Nihuya");
+           }
  */
 
