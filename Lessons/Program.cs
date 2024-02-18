@@ -17,8 +17,9 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
+            //new Homework().HomeworkCsharp();
 
-            new Homework().HomeworkCsharp();
+            
 
 
         }
@@ -199,8 +200,14 @@ int a = 10;
             Console.WriteLine(result);
 
 =====================================================================
- LESSON 9!!!!!!!!!!!!!!!!!!!
+ LESSON 9, 10!!!!!!!!!!!!!!!!!!!
 
+            int result = 5 * 4 / 2;
+
+            Console.WriteLine(result);
+
+=====================================================================
+ LESSON 11!!!!!!!!!!!!!!!!!!!
  */
 
 
