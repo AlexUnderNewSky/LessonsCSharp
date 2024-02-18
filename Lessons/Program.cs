@@ -17,9 +17,7 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            new Homework().HomeworkCsharp();
-
-
+            //new Homework().HomeworkCsharp();
 
 
 
@@ -229,7 +227,7 @@ int a = 5;
             Console.WriteLine(a == b);
 
 =====================================================================
- LESSON 12!!!!!!!!!!!!!!!!!!!
+ LESSON 13!!!!!!!!!!!!!!!!!!!
 
             Console.WriteLine("Please enter first value: ");
             double a = Convert.ToDouble(Console.ReadLine());
@@ -244,8 +242,37 @@ int a = 5;
             }
 
 =====================================================================
- LESSON 12!!!!!!!!!!!!!!!!!!!
+ LESSON 14!!!!!!!!!!!!!!!!!!!
 
+bool isInfected = false;
+
+            if (!isInfected)
+            {
+                Console.WriteLine("He's good");
+            }
+
+
+
+            int fanSpeed = 3000;
+
+            bool isHightTemperature = true;
+
+            bool isNoCooling = true;
+
+            bool hasNoCooling = fanSpeed <= 0;
+
+            if (isHightTemperature && isNoCooling)
+            {
+                Console.WriteLine("Your CPU may be damaged!");
+            }
+            else if (!isNoCooling && isHightTemperature)
+            {
+                Console.WriteLine("Cooler is broken");
+            }
+            else
+            { 
+                Console.WriteLine("You are dead"); 
+            }
 
  */
 
