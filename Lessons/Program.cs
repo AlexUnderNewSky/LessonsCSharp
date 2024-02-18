@@ -18,22 +18,8 @@ namespace Lessons
         static void Main(string[] args)
         {
 
-            string str = "7";
-
-            int a;
-
-            bool result = int.TryParse(str, out a);
-
-            if (result)
-            {
-                Console.WriteLine("Operation success, a = " + a);
-            }
-            else
-            {
-                Console.WriteLine("Operation failed!");
-            }
-
             
+
 
         }
     }
@@ -175,6 +161,46 @@ string str = "1";
 
                 Console.WriteLine("Fuck you!");
             }
+
+string str = "7";
+
+            int a;
+
+            bool result = int.TryParse(str, out a);
+
+            if (result)
+            {
+                Console.WriteLine("Operation success, a = " + a);
+            }
+            else
+            {
+                Console.WriteLine("Operation failed!");
+            }
+
+=====================================================================
+ LESSON 8!!!!!!!!!!!!!!!!!!!
+
+int a = 10;
+            int b = 3;
+            int c = 5;
+
+            int result = a + b + c;
+
+            if (a % 2 == 0)
+            {
+                result = "even number";
+            }
+            else
+            {
+                result = "odd number";
+            }
+
+
+            Console.WriteLine(result);
+
+=====================================================================
+ LESSON 9!!!!!!!!!!!!!!!!!!!
+
  */
 
 
