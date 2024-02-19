@@ -17,9 +17,9 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            new Homework().HomeworkCsharp();
+            //new Homework().HomeworkCsharp();
 
-            
+
 
         }
     }
@@ -316,6 +316,30 @@ bool isInfected = false;
                             count++;
                             Console.WriteLine(count);
                         } while (count < 5);
+
+
+
+=====================================================================
+ LESSON 18!!!!!!!!!!!!!!!!!!!
+
+            int limit = int.Parse(Console.ReadLine());
+
+            int test = 0;
+            int i = 0;
+
+            for (int i = 0; i <= limit; i++)
+            {
+                Console.WriteLine(i);
+                test += i;
+            }
+
+            Console.WriteLine(test);
+
+            while (i <= limit)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
 
 
  */
