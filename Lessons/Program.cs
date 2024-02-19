@@ -19,8 +19,7 @@ namespace Lessons
         {
             //new Homework().HomeworkCsharp();
 
-
-
+                        
         }
     }
 }
@@ -341,6 +340,57 @@ bool isInfected = false;
                 i++;
             }
 
+=====================================================================
+ LESSON 19!!!!!!!!!!!!!!!!!!!
+
+             int limit = int.Parse(Console.ReadLine());
+
+             for (int i = 0; i <= limit; i++)
+             {
+                Console.WriteLine(i);
+             }
+
+
+             for (int i = 0; i < 5;) 
+             {
+                 i++;
+                 Console.WriteLine(i);
+             }
+
+
+            for (int i = 0, j = 5; i < 10 && j < 12; i++, j++)
+            {
+                Console.WriteLine("i: " + i);
+                Console.WriteLine("j: " + j);
+            }
+
+            for (int i = 0, j = 5; i < 5 && j > 0; i++, j--)
+            {
+                Console.WriteLine("i: " + i);
+                Console.WriteLine("j- " + j);
+            }
+
+            Console.ReadLine();
+
+
+            int i = 0;
+
+            for (; i < 3; i++) 
+            {
+                Console.WriteLine("for_1: " + i);
+            }
+            for (; i < 5; i++)
+            {
+                Console.WriteLine("for_2: " + i);
+            }
+
+             for (;;) 
+             {
+                 Console.WriteLine("For is working");
+                 System.Threading.Thread.Sleep(300);
+                 break;
+             }
+             Console.ReadLine();
 
  */
 
