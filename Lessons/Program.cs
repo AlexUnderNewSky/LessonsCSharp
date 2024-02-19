@@ -17,7 +17,7 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            new Homework().HomeworkCsharp();
+            //new Homework().HomeworkCsharp();
             
 
 
@@ -56,30 +56,30 @@ namespace Lessons
 
 
 /*
-  LESSON 1!!!!!!!!!!!!!!!!!!!
+LESSON 1!!!!!!!!!!!!!!!!!!!
 
-  String a = "Hello World!";
-Console.WriteLine(a + "FUCKING WORLD");
+            String a = "Hello World!";
+            Console.WriteLine(a + "FUCKING WORLD");
 
-Console.WriteLine("Привет ЁБАННЫЙ МИР!!!");
-Console.WriteLine("Please, enter a: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Please, enter b: ");
-int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Привет ЁБАННЫЙ МИР!!!");
+            Console.WriteLine("Please, enter a: ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please, enter b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
 
 =====================================================================
 LESSON 2!!!!!!!!!!!!!!!!!!!
 
-if (a >= 1 && a <= 10)
-{
-    a = 15;
-}
-else
-{
-    Console.WriteLine("A is not empty!");
-}
+            if (a >= 1 && a <= 10)
+            {
+                a = 15;
+            }
+            else
+            {
+                Console.WriteLine("A is not empty!");
+            }
 
-Console.WriteLine("a = " + a + " b = " + b);
+            Console.WriteLine("a = " + a + " b = " + b);
 
 =====================================================================
  LESSON 3!!!!!!!!!!!!!!!!!!!
@@ -95,7 +95,7 @@ Console.WriteLine("a = " + a + " b = " + b);
 =====================================================================
  LESSON 4!!!!!!!!!!!!!!!!!!!
 
- Console.WriteLine("Please, enter b: ");
+            Console.WriteLine("Please, enter b: ");
             int b = Convert.ToInt16(Console.ReadLine());
             int a = 0;
             if (b > 10)
@@ -112,7 +112,7 @@ Console.WriteLine("a = " + a + " b = " + b);
 =====================================================================
  LESSON 5!!!!!!!!!!!!!!!!!!!
 
-string data;
+            string data;
 
             data = Console.ReadLine();
 
@@ -121,7 +121,7 @@ string data;
 =====================================================================
  LESSON 6!!!!!!!!!!!!!!!!!!!
 
-string str;
+            string str;
 
             int a, b;
 
@@ -140,7 +140,7 @@ string str;
             int result = a + b;
 
             Console.WriteLine("Sum of numbers = " + result);
-///////////
+            ///////////
             string str = "1.9";
 
             double a = Convert.ToDouble(str);
@@ -150,7 +150,7 @@ string str;
 =====================================================================
  LESSON 7!!!!!!!!!!!!!!!!!!!
 
-string str = "1";
+            string str = "1";
             try
             {
                 int a = int.Parse(str);
@@ -181,7 +181,7 @@ string str = "7";
 =====================================================================
  LESSON 8!!!!!!!!!!!!!!!!!!!
 
-int a = 10;
+            int a = 10;
             int b = 3;
             int c = 5;
 
@@ -222,7 +222,7 @@ int a = 10;
 =====================================================================
  LESSON 12!!!!!!!!!!!!!!!!!!!
 
-int a = 5;
+            int a = 5;
             int b= 4;
 
             Console.WriteLine(a == b);
@@ -279,7 +279,6 @@ bool isInfected = false;
 =====================================================================
  LESSON 15!!!!!!!!!!!!!!!!!!!
 
-
             Console.WriteLine("Please enter 'a' value");
             string a = Console.ReadLine();
 
@@ -295,6 +294,9 @@ bool isInfected = false;
                     Console.WriteLine("You entered undefined symbol");
                     break;
             }
+
+=====================================================================
+ LESSON 16!!!!!!!!!!!!!!!!!!!
 
  */
 
