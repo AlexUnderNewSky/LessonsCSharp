@@ -12,7 +12,7 @@ namespace Lessons
         {
 
 
-
+            
 
         }
     }
@@ -72,16 +72,68 @@ Homework 1: 3 task:
            Console.WriteLine(resEuro);
  
 Homework 2: 1 task:
-           Console.WriteLine("Please enter first value: ");
-           int a = Convert.ToInt16(Console.ReadLine());
+           Console.WriteLine("Please enter value: ");
+            int a;
+            a = int.Parse(Console.ReadLine());
 
-           if(a % 2 == 0)
-           {
-               Console.WriteLine("Zaebis'");
-           }
-           else
-           {
-               Console.WriteLine("Nihuya");
-           }
+            int temp = a % 2;
+
+            bool res = temp == 0;
+
+            if (res)
+            {
+                Console.WriteLine("Zaebis'");
+            }
+            else
+            {
+                Console.WriteLine("Nihuya");
+            }
+
+Homework 3: 1 task:
+            Console.WriteLine("Please enter fist value:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Select a mathematical operation : '+', '-', '*', '/', '%'");
+            char b = char.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter second value:");
+            double c = double.Parse(Console.ReadLine());
+
+            //Console.WriteLine(a + " " + b + " " + c);
+
+            double res;
+
+            switch(b) 
+            {
+                case '+':
+                    res = a + c;
+                    Console.WriteLine(res);
+                    break;
+                case '-':
+                    res = a - c;
+                    Console.WriteLine(res);
+                    break;
+                case '*':
+                    res = a * c;
+                    Console.WriteLine(res);
+                    break;
+                case '/':
+                    if(a == 0 || c == 0)
+                    {
+                        Console.WriteLine("0 is unacceptable in division.");
+                    }
+                    else { 
+                    res = a / c;
+                    Console.WriteLine(res);
+                    }
+                    break;
+                    
+                case '%':
+                    res = a % c;
+                    Console.WriteLine(res);
+                    break;
+                default:
+                    Console.WriteLine("Something went wrong");
+                    break;
+
+            }
  */
 

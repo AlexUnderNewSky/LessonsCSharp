@@ -17,7 +17,8 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            //new Homework().HomeworkCsharp();
+            new Homework().HomeworkCsharp();
+            
 
 
 
@@ -272,6 +273,27 @@ bool isInfected = false;
             else
             { 
                 Console.WriteLine("You are dead"); 
+            }
+
+
+=====================================================================
+ LESSON 15!!!!!!!!!!!!!!!!!!!
+
+
+            Console.WriteLine("Please enter 'a' value");
+            string a = Console.ReadLine();
+
+            switch (a)
+            {
+                case "+":
+                    Console.WriteLine("You entered plus");
+                    break;
+                case "-":
+                    Console.WriteLine("You entered minus");
+                    break;
+                default:
+                    Console.WriteLine("You entered undefined symbol");
+                    break;
             }
 
  */
