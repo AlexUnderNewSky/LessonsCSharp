@@ -150,5 +150,28 @@ Homework 3: 1 task:
                 }
                 Console.ReadLine();
             }
+
+Homework 4: 1 task:
+            Console.WriteLine("Please enter your start value: ");
+            int count = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter your finish value: ");
+            int limit = int.Parse(Console.ReadLine());
+
+            int evenCount = 0;
+            int oddCount = 0;
+
+            while (count < limit)
+            {
+                count++;
+                if(count % 2 == 0)
+                {
+                    evenCount++;
+                }else
+                {
+                   oddCount++;
+                }
+            }
+            Console.WriteLine("Even numbers are - " + evenCount);
+            Console.WriteLine("Odd numbers are - " + oddCount);
  */
 

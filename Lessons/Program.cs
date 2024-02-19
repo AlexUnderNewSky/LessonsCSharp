@@ -17,7 +17,7 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            //new Homework().HomeworkCsharp();
+            new Homework().HomeworkCsharp();
 
             
 
