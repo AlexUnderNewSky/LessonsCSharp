@@ -10,7 +10,7 @@ namespace Lessons
     {
         public void HomeworkCsharp()
         {
-            
+
         }
     }
 }
@@ -157,21 +157,23 @@ Homework 4: 1 task:
             Console.WriteLine("Please enter your finish value: ");
             int limit = int.Parse(Console.ReadLine());
 
-            int evenCount = 0;
-            int oddCount = 0;
+            int evenCount = 0, oddCount = 0, evenSum = 0, oddSum = 0;
 
-            while (count < limit)
+            while (count <= limit)
             {
-                count++;
-                if(count % 2 == 0)
+                if (count % 2 == 0)
                 {
                     evenCount++;
-                }else
-                {
-                   oddCount++;
+                    evenSum += count;
                 }
+                else
+                {
+                    oddCount++;
+                    oddSum =+ count;
+                }
+                count++;
             }
-            Console.WriteLine("Even numbers are - " + evenCount);
-            Console.WriteLine("Odd numbers are - " + oddCount);
+            Console.WriteLine("Even numbers are - " + evenCount + " | Their sum - " + evenSum);
+            Console.WriteLine("Odd  numbers are - " + oddCount + " | Their sum - " + oddSum);
  */
 

@@ -21,7 +21,6 @@ namespace Lessons
 
             
 
-
         }
     }
 }
@@ -298,14 +297,26 @@ bool isInfected = false;
 =====================================================================
  LESSON 16!!!!!!!!!!!!!!!!!!!
 
-int count = 0;
-            int limit  = int.Parse(Console.ReadLine());
+            int count = 0;
+                        int limit  = int.Parse(Console.ReadLine());
 
-            while (count < limit)
-            {
-                count++;
-                Console.WriteLine(count);
-            }
+                        while (count < limit)
+                        {
+                            count++;
+                            Console.WriteLine(count);
+                        }
+
+=====================================================================
+ LESSON 17!!!!!!!!!!!!!!!!!!!
+
+            int count = 0;
+
+                        do
+                        {
+                            count++;
+                            Console.WriteLine(count);
+                        } while (count < 5);
+
 
  */
 
