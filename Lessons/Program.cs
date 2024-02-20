@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 /*
 !!!!!!!!!!!!!! Change format , to . and . to , !!!!!!!!
@@ -15,12 +16,14 @@ namespace Lessons
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            //new Homework().HomeworkCsharp();
+            new Homework().HomeworkCsharp();
 
-             
+            
         }
+
     }
 }
 
@@ -405,6 +408,82 @@ bool isInfected = false;
                 Console.WriteLine(i);
             }
             Console.ReadLine();     
+
+
+=====================================================================
+ LESSON 22!!!!!!!!!!!!!!!!!!!
+
+            for (int i = 1; i <= 3; i++)
+            {
+                Console.WriteLine("cycle 1, iteration : " + i);
+                for (int j = 1; j <= 4; j++) 
+                {
+                    Console.WriteLine("\tcycle 2, iteration : " + j);
+                    for (int k = 0; k <= 2; k++)
+                    {
+                        Console.WriteLine("\t\tcycle 3, iteration : " + k);
+                    }
+                }    
+            }
+            
+            Console.ReadLine();
+
+=====================
+
+            Console.Write("Enter height of square: ");
+            int height = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter width of square: ");
+            int width = int.Parse(Console.ReadLine());
+
+            for (int j = 0; j < height; j++)
+            {
+
+                for (int i = 0; i < width; i++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+
+=====================
+Example 1
+         static int[,] GetRandomArray(int rows, int columns) 
+        {
+            Random random = new Random();
+            var result = new int[rows, columns];
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    result[i, j] = random.Next(100);
+                }
+            }
+            return result;
+        }
+        static void Main(string[] args)
+        {
+            //new Homework().HomeworkCsharp();
+
+            int rows = 5; 
+            int columns = 10;
+            var myArray = GetRandomArray(rows, columns);
+
+            for (int i = 0;i < rows; i++) 
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"{myArray[i,j]}\t");
+                }
+
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
+            
+        }
  */
 
 
