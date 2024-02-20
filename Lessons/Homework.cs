@@ -11,6 +11,9 @@ namespace Lessons
         public void HomeworkCsharp()
         {
 
+            
+
+
         }
     }
 }
@@ -175,5 +178,61 @@ Homework 4: 1 task:
             }
             Console.WriteLine("Even numbers are - " + evenCount + " | Their sum - " + evenSum);
             Console.WriteLine("Odd  numbers are - " + oddCount + " | Their sum - " + oddSum);
+
+Homework 5: 1 task:
+            Моя жижа))
+====================
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 1 && i > 0; j++)
+                {
+                    Console.Write("#");
+                    for (int k = 1; k < 2 && i > 1; k++)
+                    {
+                        Console.Write("#");
+                        for (int l = 2; l < 3 && i > 2; l++)
+                        {
+                            Console.Write("#");
+                            for (int n = 3; n < 4 && i > 3; n++)
+                            {
+                                Console.Write("#");
+                                continue;
+                            }
+                        }
+                    }
+                }
+
+                Console.WriteLine("#");
+            }
+====================
+            Не моя жижа((
+            Console.WriteLine("Enter heigt : ");
+            int height = int.Parse(Console.ReadLine());
+            int width = 1;
+            for (int i = 0; i < height; i++)
+            {
+
+                for (int j = 0; j < width; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine("");
+                width++;
+
+            }
+
+            int width2 = height;
+            for (int i = 0; i < height; i++)
+            {
+
+                for (int j = 0; j < width2; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine("");
+                width2--;
+
+            }
+            Console.ReadLine();
  */
 
