@@ -10,7 +10,6 @@ namespace Lessons
     {
         public void HomeworkCsharp()
         {
-
             
 
 
@@ -205,7 +204,7 @@ Homework 5: 1 task:
                 Console.WriteLine("#");
             }
 ====================
-            Не моя жижа((
+            Полу-моя жижа((
             Console.WriteLine("Enter heigt : ");
             int height = int.Parse(Console.ReadLine());
             int width = 1;
@@ -221,6 +220,8 @@ Homework 5: 1 task:
 
             }
 
+            Console.WriteLine("");
+
             int width2 = height;
             for (int i = 0; i < height; i++)
             {
@@ -233,6 +234,40 @@ Homework 5: 1 task:
                 width2--;
 
             }
+
+            Console.WriteLine("");
+
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = height; j > i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+
+             Console.WriteLine("");
+
+
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = i; j < height; j++)
+                {
+                    Console.Write("#");
+                }
+
+                Console.WriteLine();
+            }
+
             Console.ReadLine();
+
  */
 
