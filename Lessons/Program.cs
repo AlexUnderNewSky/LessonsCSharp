@@ -19,7 +19,7 @@ namespace Lessons
         {
             //new Homework().HomeworkCsharp();
 
-                        
+             
         }
     }
 }
@@ -392,6 +392,19 @@ bool isInfected = false;
              }
              Console.ReadLine();
 
+=====================================================================
+ LESSON 21!!!!!!!!!!!!!!!!!!!
+
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (i == 2)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();     
  */
 
 
