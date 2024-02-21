@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 /*
 !!!!!!!!!!!!!! Change format , to . and . to , !!!!!!!!
@@ -21,19 +22,7 @@ namespace Lessons
         {
             //new Homework().HomeworkCsharp();
 
-            int[] myArray = new int[5];
-
-
-            myArray[0] = 10;
-            myArray[1] = 3;
-            myArray[2] = 15;
-
-
-            int a = myArray[0];
-
-            Console.WriteLine(myArray[1]);
-
-            Console.ReadLine();
+            
 
         }
 
@@ -545,6 +534,16 @@ Example 1
             int a = myArray[0];
 
             Console.WriteLine(myArray[1]);
+
+            Console.ReadLine();
+
+=====================================================================
+ LESSON 25!!!!!!!!!!!!!!!!!!!
+
+            int[] myArray = Enumerable.Range(int.Parse(Console.ReadLine()),5).ToArray();
+
+            Console.WriteLine(myArray[3]);
+
 
             Console.ReadLine();
 */
