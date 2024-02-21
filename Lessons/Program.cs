@@ -21,9 +21,19 @@ namespace Lessons
         {
             //new Homework().HomeworkCsharp();
 
+            int[] myArray = new int[5];
 
 
+            myArray[0] = 10;
+            myArray[1] = 3;
+            myArray[2] = 15;
 
+
+            int a = myArray[0];
+
+            Console.WriteLine(myArray[1]);
+
+            Console.ReadLine();
 
         }
 
@@ -520,6 +530,23 @@ Example 1
             int outputData = inputData < 0 ? 1 : inputData;
 
             Console.WriteLine(outputData);
+
+
+            int[] myArray = new int[5];
+
+=====================================================================
+ LESSON 24!!!!!!!!!!!!!!!!!!!
+
+            myArray[0] = 10;
+            myArray[1] = 3;
+            myArray[2] = 15;
+
+
+            int a = myArray[0];
+
+            Console.WriteLine(myArray[1]);
+
+            Console.ReadLine();
 */
 
 
