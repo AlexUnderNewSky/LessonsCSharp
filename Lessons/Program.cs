@@ -19,9 +19,12 @@ namespace Lessons
 
         static void Main(string[] args)
         {
-            new Homework().HomeworkCsharp();
+            //new Homework().HomeworkCsharp();
 
-            
+
+
+
+
         }
 
     }
@@ -484,6 +487,39 @@ Example 1
             Console.ReadLine();
             
         }
- */
+
+
+=====================================================================
+ LESSON 23!!!!!!!!!!!!!!!!!!!
+
+
+        bool accessAllowed;
+
+            string storedPassword = "qwerty";
+            string enteredPassword = Console.ReadLine();
+
+            if (enteredPassword == storedPassword) 
+            { 
+                accessAllowed = true;
+            }
+            else
+            {
+                accessAllowed = false;
+            }
+
+            accessAllowed = enteredPassword == storedPassword ? true : false;
+
+==============
+
+            Console.WriteLine(accessAllowed);
+
+            Console.ReadLine();
+
+            int inputData = int.Parse(Console.ReadLine());
+
+            int outputData = inputData < 0 ? 1 : inputData;
+
+            Console.WriteLine(outputData);
+*/
 
 
