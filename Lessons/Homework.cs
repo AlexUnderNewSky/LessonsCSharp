@@ -10,7 +10,7 @@ namespace Lessons
     {
         public void HomeworkCsharp()
         {
-            
+
 
 
         }
@@ -268,6 +268,41 @@ Homework 5: 1 task:
             }
 
             Console.ReadLine();
+
+Homework 6: 1 task:
+            int[] myArray = new int[5];
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray.SetValue(int.Parse(Console.ReadLine()), i);
+            }
+            var str = string.Join(" ", myArray);
+            Console.WriteLine("Array = " + str);
+Homework 6: 2 task:
+            for (int j = myArray.Length - 1; j >= 0; j--)
+            {
+                myArray.SetValue(int.Parse(Console.ReadLine()), j);
+            }
+            str = string.Join(" ", myArray);
+            Console.WriteLine("Backward array = " + str);
+Homework 6: 3 task:
+            int evenNumbers = 0;
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray.SetValue(int.Parse(Console.ReadLine()), i);
+                if (myArray[i] % 2 == 0)
+                {
+                    evenNumbers += myArray[i];
+                }
+            }
+            Console.WriteLine("Sum of even numbers = " + evenNumbers);
+
+Homework 6: 4 task:
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray.SetValue(int.Parse(Console.ReadLine()), i);  
+            }
+            Console.WriteLine("Min number of array = " + myArray.Min());
 
  */
 
