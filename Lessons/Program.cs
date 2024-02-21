@@ -21,9 +21,8 @@ namespace Lessons
         static void Main(string[] args)
         {
             //new Homework().HomeworkCsharp();
-
-
-
+            
+           
         }
 
     }
@@ -544,6 +543,23 @@ Example 1
 
             Console.WriteLine(myArray[3]);
 
+
+            Console.ReadLine();
+
+=====================================================================
+ LESSON 26,27!!!!!!!!!!!!!!!!!!!
+
+            int[] myArray = { 111, 10, 4, 99, 49, 111, 77, 4, 42, 5 };
+
+
+            int res = myArray.Where(i => i < 20).FirstOrDefault();
+            var str = string.Join(" ", res);
+            Console.WriteLine("Array = " + str);
+
+            int[] result = myArray.Distinct().OrderBy(i => i).ToArray();
+
+            var str = string.Join(" ", result);
+            Console.WriteLine("Array = " + str);
 
             Console.ReadLine();
 */
