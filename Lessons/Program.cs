@@ -21,8 +21,9 @@ namespace Lessons
         static void Main(string[] args)
         {
             //new Homework().HomeworkCsharp();
+
             
-           
+
         }
 
     }
@@ -560,6 +561,25 @@ Example 1
 
             var str = string.Join(" ", result);
             Console.WriteLine("Array = " + str);
+
+            Console.ReadLine();
+
+
+=====================================================================
+ LESSON 30!!!!!!!!!!!!!!!!!!!
+
+            //data_type [,] name_array
+
+            int[,] myArray = new int[,]
+            {
+                {2,45,12,51,51 },
+                {6, 7, 8, 3, 1 },
+                {1, 5,65,78,13 }
+            };
+
+
+
+            Console.WriteLine(myArray[0, 2]);
 
             Console.ReadLine();
 */
