@@ -9,9 +9,23 @@ namespace Lessons
 {
     internal class Homework
     {
+        static int ArraySearch(int a, int[] myArray)
+        {
+            var hash = new HashSet<int>(myArray);
+
+            if (hash.Contains(a))
+            {
+                Console.WriteLine(string.Format("Number '" + a + "' includes in array"));
+            }else
+            {
+                Console.WriteLine("Number is not in array");
+            }
+            return 1;
+        }
         public void HomeworkCsharp()
         {
-            
+            int[] myArray = { 1, 2, 3, 4, 5, 6, 2 };
+            Console.WriteLine(ArraySearch(2, myArray));
 
             Console.ReadLine();
 
@@ -326,6 +340,30 @@ Homework 7: 1 task:
                 Console.ReadLine();
 
             }
+
+Homework 8: 1 task:
+
+        static int ArraySearch(int a, int[] myArray)
+        {
+            var hash = new HashSet<int>(myArray);
+
+            if (hash.Contains(a))
+            {
+                Console.WriteLine(string.Format("Number '" + a + "' includes in array"));
+            }else
+            {
+                Console.WriteLine("Number is not in array");
+            }
+            return 1;
+        }
+        public void HomeworkCsharp()
+        {
+            int[] myArray = { 1, 2, 3, 4, 5, 6, 2 };
+            Console.WriteLine(ArraySearch(2, myArray));
+
+            Console.ReadLine();
+
+        }
 
  */
 
