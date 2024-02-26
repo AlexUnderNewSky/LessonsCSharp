@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,8 +11,9 @@ namespace Lessons
     {
         public void HomeworkCsharp()
         {
+            
 
-
+            Console.ReadLine();
 
         }
     }
@@ -303,6 +305,27 @@ Homework 6: 4 task:
                 myArray.SetValue(int.Parse(Console.ReadLine()), i);  
             }
             Console.WriteLine("Min number of array = " + myArray.Min());
+
+Homework 7: 1 task:
+            static void Line(char a, int b)
+            {
+                for (int i = 0; i < b; i++)
+                {
+                    Console.Write(a);
+                }
+            }
+            public void HomeworkCsharp()
+            {
+                Console.Write("Please enter sybmol: ");
+                char a = char.Parse(Console.ReadLine());
+                Console.WriteLine();
+                Console.Write("Please enter how many times to print this symbol: ");
+                int b = int.Parse(Console.ReadLine());
+                Line(a, b);
+
+                Console.ReadLine();
+
+            }
 
  */
 
