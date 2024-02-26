@@ -25,6 +25,8 @@ namespace Lessons
 
             
 
+
+
             Console.ReadLine();
         }
 
@@ -681,7 +683,56 @@ Example 1
             int myArrayRank2 = myArray2.Rank;
 
             int myArrayLength = myArray.Length;
-            int myArrayLength2 = myArray2.Length;*/
-*/
+            int myArrayLength2 = myArray2.Length;
+
+ 
+=====================================================================
+ LESSON 34!!!!!!!!!!!!!!!!!!!
+
+ 
+            Random rnd = new Random();
+
+            int[,,,] myArray = new int[4, 3, 5, 8];
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    for (int k = 0; k < myArray.GetLength(2); k++)
+                    {
+                        for (int q = 0; q < myArray.GetLength(3); q++)
+                        {
+                            myArray[i, j, k, q] = rnd.Next(100);
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < myArray.GetLength(0); i++)
+            {
+                Console.WriteLine($"{i + 1} page");
+                for (int j = 0; j < myArray.GetLength(1); j++)
+                {
+                    for (int k = 0; k < myArray.GetLength(2); k++)
+                    {
+                        for (int q = 0; q < myArray.GetLength(3); q++)
+                        {
+                            Console.Write($"{myArray[i, j, k, q]} ");
+                        }
+                        Console.WriteLine();
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine("==================");
+            }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ */
+
 
 
