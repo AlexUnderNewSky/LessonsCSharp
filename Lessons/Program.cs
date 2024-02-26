@@ -18,18 +18,12 @@ namespace Lessons
 {
     internal class Program
     {
-
+        
         static void Main(string[] args)
         {
-            //new Homework().HomeworkCsharp();
+            new Homework().HomeworkCsharp();
 
-            
-
-
-
-            Console.ReadLine();
         }
-
     }
 }
 
@@ -727,6 +721,39 @@ Example 1
             }
  
  
+ 
+=====================================================================
+ LESSON 35!!!!!!!!!!!!!!!!!!!
+
+ 
+        static void Main(string[] args)
+        {
+            //new Homework().HomeworkCsharp();
+
+            int a, b, c;
+            
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+
+            c = Sum(a, b);
+            PrintResult(c);
+
+            //Console.WriteLine(Sum(a, b));
+
+            Console.WriteLine($"==============");
+
+
+
+            Console.ReadLine();
+        }
+        static void PrintResult(int result)
+        {
+            Console.WriteLine($"Result of sum {result}");
+        }
+        static int Sum(int a, int b)
+        {
+            return a * b;
+        }   
  
  
  
