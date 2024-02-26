@@ -23,7 +23,8 @@ namespace Lessons
         {
             //new Homework().HomeworkCsharp();
 
-           
+            
+
             Console.ReadLine();
         }
 
@@ -643,6 +644,44 @@ Example 1
 
           
             Console.ReadLine();
+
+=====================================================================
+ LESSON 33!!!!!!!!!!!!!!!!!!!
+
+            /*int[][] myArray = new int[8][];
+
+            myArray[0] = new int[6];
+            myArray[1] = new int[3];
+            myArray[2] = new int[10];
+            myArray[3] = new int[8];
+            myArray[4] = new int[11];
+            myArray[5] = new int[5];
+            myArray[6] = new int[12];
+            myArray[7] = new int[9];
+
+            Random rnd = new Random();
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                for (int j = 0; j < myArray[i].Length; j++)
+                {
+                    myArray[i][j] = rnd.Next(100);
+                }
+            }
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                for (int j = 0; j < myArray[i].Length; j++)
+                {
+                    Console.Write($"{myArray[i][j]} \t");
+                }
+                Console.WriteLine();
+            }
+            int[,] myArray2 = new int[10, 5];
+
+            int myArrayRank = myArray.Rank;
+            int myArrayRank2 = myArray2.Rank;
+
+            int myArrayLength = myArray.Length;
+            int myArrayLength2 = myArray2.Length;*/
 */
 
 
