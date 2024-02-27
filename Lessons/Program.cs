@@ -18,17 +18,11 @@ namespace Lessons
 {
     internal class Program
     {
-        static int b = 13;
-        static void Foo()
-        {
-            int b = 11;
-            Console.WriteLine($"{Program.b} and {b}");
-        }
         static void Main(string[] args)
         {
             //new Homework().HomeworkCsharp();
-            Foo();
-            Console.ReadLine();
+
+            //nothing
         }
     }
 }
