@@ -11,33 +11,24 @@ namespace Lessons
 {
     internal class Homework
     {
-        static void Line(char a, uint b)
+        static int ArraySearch(int a, int[] myArray)
         {
-            for (int i = 0; i < b; i++)
+            var hash = new HashSet<int>(myArray);
+
+            if (hash.Contains(a))
             {
-                Console.Write(a);
+                Console.WriteLine(string.Format("Number '" + a + "' includes in array"));
             }
+            else
+            {
+                Console.WriteLine("Number is not in array");
+            }
+            return 1;
         }
         public void HomeworkCsharp()
         {
-            Console.Write("Please enter sybmol: ");
-            char a = char.Parse(Console.ReadLine());
-            Console.WriteLine();
-            Console.Write("Please enter how many times to print this symbol: ");
-            uint b = 0;
-            try
-            {
-                b = uint.Parse(Console.ReadLine());
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Your number is lower than 0");
-                Console.Beep();
-                System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
-                Environment.Exit(0);
-            }
-
-            Line(a, b);
+            int[] myArray = { 1, 2, 3, -4, 5, 6, 2 };
+            Console.WriteLine(ArraySearch(int.Parse(Console.ReadLine()), myArray));
 
             Console.ReadLine();
 
@@ -374,7 +365,8 @@ Homework 8: 1 task:
             if (hash.Contains(a))
             {
                 Console.WriteLine(string.Format("Number '" + a + "' includes in array"));
-            }else
+            }
+            else
             {
                 Console.WriteLine("Number is not in array");
             }
@@ -382,8 +374,8 @@ Homework 8: 1 task:
         }
         public void HomeworkCsharp()
         {
-            int[] myArray = { 1, 2, 3, 4, 5, 6, 2 };
-            Console.WriteLine(ArraySearch(2, myArray));
+            int[] myArray = { 1, 2, 3, -4, 5, 6, 2 };
+            Console.WriteLine(ArraySearch(int.Parse(Console.ReadLine()), myArray));
 
             Console.ReadLine();
 
