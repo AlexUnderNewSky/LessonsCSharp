@@ -22,7 +22,13 @@ namespace Lessons
         {
             //new Homework().HomeworkCsharp();
 
-            //nothing
+            string str = null;
+
+            string result = str ?? "default string";
+
+            Console.WriteLine($"number of symbols in the string - {result.Length}");
+
+            Console.ReadLine();
         }
     }
 }
@@ -770,6 +776,15 @@ Example 1
             Foo();
             Console.ReadLine();
         }
+
+=====================================================================
+ LESSON 41!!!!!!!!!!!!!!!!!!!
+ 
+            string str = null;
+
+            string result = str ?? "default string";
+
+            Console.WriteLine($"number of symbols in the string - {result.Length}");
  
  
  */
