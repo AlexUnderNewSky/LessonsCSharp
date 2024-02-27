@@ -2,30 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Lessons
 {
     internal class Homework
     {
-        static int ArraySearch(int a, int[] myArray)
+        static void Line(char a, uint b)
         {
-            var hash = new HashSet<int>(myArray);
-
-            if (hash.Contains(a))
+            for (int i = 0; i < b; i++)
             {
-                Console.WriteLine(string.Format("Number '" + a + "' includes in array"));
-            }else
-            {
-                Console.WriteLine("Number is not in array");
+                Console.Write(a);
             }
-            return 1;
         }
         public void HomeworkCsharp()
         {
-            int[] myArray = { 1, 2, 3, 4, 5, 6, 2 };
-            Console.WriteLine(ArraySearch(2, myArray));
+            Console.Write("Please enter sybmol: ");
+            char a = char.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Please enter how many times to print this symbol: ");
+            uint b = 0;
+            try
+            {
+                b = uint.Parse(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Your number is lower than 0");
+                Console.Beep();
+                System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
+                Environment.Exit(0);
+            }
+
+            Line(a, b);
 
             Console.ReadLine();
 
@@ -321,25 +333,37 @@ Homework 6: 4 task:
             Console.WriteLine("Min number of array = " + myArray.Min());
 
 Homework 7: 1 task:
-            static void Line(char a, int b)
+            static void Line(char a, uint b)
+        {
+            for (int i = 0; i < b; i++)
             {
-                for (int i = 0; i < b; i++)
-                {
-                    Console.Write(a);
-                }
+                Console.Write(a);
             }
-            public void HomeworkCsharp()
+        }
+        public void HomeworkCsharp()
+        {
+            Console.Write("Please enter sybmol: ");
+            char a = char.Parse(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Please enter how many times to print this symbol: ");
+            uint b = 0;
+            try
             {
-                Console.Write("Please enter sybmol: ");
-                char a = char.Parse(Console.ReadLine());
-                Console.WriteLine();
-                Console.Write("Please enter how many times to print this symbol: ");
-                int b = int.Parse(Console.ReadLine());
-                Line(a, b);
-
-                Console.ReadLine();
-
+                b = uint.Parse(Console.ReadLine());
             }
+            catch (Exception)
+            {
+                Console.WriteLine("Your number is lower than 0");
+                Console.Beep();
+                System.Diagnostics.Process.Start(System.AppDomain.CurrentDomain.FriendlyName);
+                Environment.Exit(0);
+            }
+
+            Line(a, b);
+
+            Console.ReadLine();
+
+        }
 
 Homework 8: 1 task:
 
