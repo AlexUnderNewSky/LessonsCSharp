@@ -11,9 +11,29 @@ namespace Lessons
 {
     internal class Homework
     {
+        static void Resize(ref int[] array, int newSize)
+        {
+            int[] newArray = new int[newSize];
+
+            for (int i = 0; i < array.Length && i < newArray.Length; i++)
+            {
+                newArray[i] = array[i];
+            }
+
+            array = newArray;
+
+            for (int i = 0; i < newArray.Length; i++)
+            {
+                Console.WriteLine(newArray[i]);
+            }
+        }
         public void HomeworkCsharp()
         {
+            int[] myArray = { 1, 3, 4, 7 };
 
+            Resize(ref myArray, 10);
+
+            Console.ReadLine();
         }
     }
 }
@@ -361,6 +381,32 @@ Homework 8: 1 task:
 
             Console.ReadLine();
 
+        }
+
+Homework 9: 1 task:
+        static void Resize(ref int[] array, int newSize)
+        {
+            int[] newArray = new int[newSize];
+
+            for (int i = 0; i < array.Length && i < newArray.Length; i++)
+            {
+                newArray[i] = array[i];
+            }
+
+            array = newArray;
+
+            for (int i = 0; i < newArray.Length; i++)
+            {
+                Console.WriteLine(newArray[i]);
+            }
+        }
+        public void HomeworkCsharp()
+        {
+            int[] myArray = { 1, 3, 4, 7 };
+
+            Resize(ref myArray, 10);
+
+            Console.ReadLine();
         }
 
  */

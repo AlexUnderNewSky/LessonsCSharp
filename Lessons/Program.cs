@@ -20,15 +20,8 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            //new Homework().HomeworkCsharp();
+            new Homework().HomeworkCsharp();
 
-            string str = null;
-
-            string result = str ?? "default string";
-
-            Console.WriteLine($"number of symbols in the string - {result.Length}");
-
-            Console.ReadLine();
         }
     }
 }
@@ -786,7 +779,25 @@ Example 1
 
             Console.WriteLine($"number of symbols in the string - {result.Length}");
  
+=====================================================================
+ LESSON 42!!!!!!!!!!!!!!!!!!!
  
+        static int[] GetArray()
+        {
+            int[] myArray = null;
+            return myArray;
+        }
+        static void Main(string[] args)
+        {
+            //new Homework().HomeworkCsharp();
+
+            int[] myArray = GetArray();
+
+            Console.WriteLine($"Sum of array elements {myArray?.Sum() ?? 0}");
+
+            Console.ReadLine();
+        } 
+
  */
 
 
