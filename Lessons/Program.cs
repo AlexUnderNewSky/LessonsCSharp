@@ -19,49 +19,13 @@ namespace Lessons
 {
     internal class Program
     {
-        struct Point
-        {
-            public float x;
-            public float y;
-            public float z;
-        }
-
-        static void Foo(Point value)
-        {
-            
-        }
-
-        static void Bar(in Point value)
-        {
-
-        }
         static void Main(string[] args)
         {
             //new Homework().HomeworkCsharp();
 
-            Point a = new Point();
 
-            Stopwatch sw = Stopwatch.StartNew();
 
-            for (int i = 0; i < int.MaxValue; i++)
-            {
-                Foo(a);
-            }
-
-            sw.Stop();
-            Console.WriteLine($"Foo {sw.ElapsedMilliseconds}");
-
-            sw.Restart();
-
-            for (int i = 0; i < int.MaxValue; i++)
-            {
-                Bar(a);
-            }
-
-            sw.Stop();
-
-            Console.WriteLine($"Bar {sw.ElapsedMilliseconds}");
-
+            Console.ReadLine();
         }
     }
 }
@@ -885,6 +849,40 @@ Example 1
 
             Console.WriteLine($"Bar {sw.ElapsedMilliseconds}");
 
+        }
+
+
+
+
+=====================================================================
+ LESSON 46!!!!!!!!!!!!!!!!!!!
+ 
+  
+        static int Sum(params int[] parameters)
+        {
+            int result = 0;
+
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                result += parameters[i];
+            }
+
+            return result;
+        }
+        static int Sum(int a, int b, int c)
+        {
+            return a + b + c;
+        }
+        static void Main(string[] args)
+        {
+            //new Homework().HomeworkCsharp();
+
+            int[] myArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+            int res = Sum(myArray);
+            var str = string.Join(" ", res);
+            Console.WriteLine($"Array = {str}");
+
+            Console.ReadLine();
         }
  */
 
