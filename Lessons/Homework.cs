@@ -11,27 +11,34 @@ namespace Lessons
 {
     internal class Homework
     {
-        static void Resize(ref int[] array, int newSize)
+        /// <summary>
+        /// Туть пиздец
+        /// </summary>
+        /// <param name="array">Тут хуярь массив</param>
+        /// <param name="value">Тут хуярь число</param>
+        /// <param name="index">Тут хуярь индекс</param>
+        static void Insert(ref int[] array, int value, int index)
         {
-            int[] newArray = new int[newSize];
+            int[] newArray = new int[array.Length + 1];
 
-            for (int i = 0; i < array.Length && i < newArray.Length; i++)
-            {
+            newArray[index] = value;
+
+            for (int i = 0; i < index; i++)
                 newArray[i] = array[i];
-            }
+
+            for (int i = index; i < array.Length; i++)
+                newArray[i + 1] = array[i];
 
             array = newArray;
-
-            for (int i = 0; i < newArray.Length; i++)
-            {
-                Console.WriteLine(newArray[i]);
-            }
         }
         public void HomeworkCsharp()
         {
-            int[] myArray = { 1, 3, 4, 7 };
+            int[] myArray = { 1, 4, 6, 1 };
 
-            Resize(ref myArray, 10);
+            Insert(ref myArray, -5, myArray.Length);
+
+            var str = string.Join(" ", myArray);
+            Console.WriteLine("Array = " + str);
 
             Console.ReadLine();
         }
@@ -384,9 +391,9 @@ Homework 8: 1 task:
         }
 
 Homework 9: 1 task:
-        static void Resize(ref int[] array, int newSize)
+        static void Resize<T>(ref T[] array, int newSize)
         {
-            int[] newArray = new int[newSize];
+            T[] newArray = new T[newSize];
 
             for (int i = 0; i < array.Length && i < newArray.Length; i++)
             {
@@ -405,6 +412,39 @@ Homework 9: 1 task:
             int[] myArray = { 1, 3, 4, 7 };
 
             Resize(ref myArray, 10);
+
+            Console.ReadLine();
+        }
+
+Homework 10: 1 task:
+        /// <summary>
+        /// Туть пиздец
+        /// </summary>
+        /// <param name="array">Тут хуярь массив</param>
+        /// <param name="value">Тут хуярь число</param>
+        /// <param name="index">Тут хуярь индекс</param>
+        static void Insert(ref int[] array, int value, int index)
+        {
+            int[] newArray = new int[array.Length + 1];
+
+            newArray[index] = value;
+
+            for (int i = 0; i < index; i++)
+                newArray[i] = array[i];
+
+            for (int i = index; i < array.Length; i++)
+                newArray[i + 1] = array[i];
+
+            array = newArray;
+        }
+        public void HomeworkCsharp()
+        {
+            int[] myArray = { 1, 4, 6, 1 };
+
+            Insert(ref myArray, -5, myArray.Length);
+
+            var str = string.Join(" ", myArray);
+            Console.WriteLine("Array = " + str);
 
             Console.ReadLine();
         }
