@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Principal;
 
@@ -18,9 +19,48 @@ namespace Lessons
 {
     internal class Program
     {
+        struct Point
+        {
+            public float x;
+            public float y;
+            public float z;
+        }
+
+        static void Foo(Point value)
+        {
+            
+        }
+
+        static void Bar(in Point value)
+        {
+
+        }
         static void Main(string[] args)
         {
-            new Homework().HomeworkCsharp();
+            //new Homework().HomeworkCsharp();
+
+            Point a = new Point();
+
+            Stopwatch sw = Stopwatch.StartNew();
+
+            for (int i = 0; i < int.MaxValue; i++)
+            {
+                Foo(a);
+            }
+
+            sw.Stop();
+            Console.WriteLine($"Foo {sw.ElapsedMilliseconds}");
+
+            sw.Restart();
+
+            for (int i = 0; i < int.MaxValue; i++)
+            {
+                Bar(a);
+            }
+
+            sw.Stop();
+
+            Console.WriteLine($"Bar {sw.ElapsedMilliseconds}");
 
         }
     }
@@ -798,6 +838,54 @@ Example 1
             Console.ReadLine();
         } 
 
+
+=====================================================================
+ LESSON 45!!!!!!!!!!!!!!!!!!!
+ 
+        struct Point
+        {
+            public float x;
+            public float y;
+            public float z;
+        }
+
+        static void Foo(Point value)
+        {
+            
+        }
+
+        static void Bar(in Point value)
+        {
+
+        }
+        static void Main(string[] args)
+        {
+            //new Homework().HomeworkCsharp();
+
+            Point a = new Point();
+
+            Stopwatch sw = Stopwatch.StartNew();
+
+            for (int i = 0; i < int.MaxValue; i++)
+            {
+                Foo(a);
+            }
+
+            sw.Stop();
+            Console.WriteLine($"Foo {sw.ElapsedMilliseconds}");
+
+            sw.Restart();
+
+            for (int i = 0; i < int.MaxValue; i++)
+            {
+                Bar(a);
+            }
+
+            sw.Stop();
+
+            Console.WriteLine($"Bar {sw.ElapsedMilliseconds}");
+
+        }
  */
 
 
